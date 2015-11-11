@@ -1,0 +1,9 @@
+/.bundle
+
+/log/*
+!/log/.keep
+/tmp
+.ruby-gemset
+config/deploy.rb
+config/deploy/production.rb
+config/deploy/staging.rb

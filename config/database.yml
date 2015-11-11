@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: web1_development
+
+test:
+  <<: *default
+  database: web1_test
+
+production:
+  <<: *default
+  database: web1_production
+  username: web1
+  password: <%= ENV['WEB1_DATABASE_PASSWORD'] %>
